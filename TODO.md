@@ -41,7 +41,7 @@ See the current state of the project and upcoming features.
 
 - [x] Pipeline
 - [ ] Devtools
-- [ ] Virtualizer
+- [x] Virtualizer
 - [ ] React-Virtuoso Adapter
 - [ ] Tanstack/Virtual Adapter
 
