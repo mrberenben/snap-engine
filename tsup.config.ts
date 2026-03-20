@@ -8,8 +8,7 @@ export const config = defineConfig({
     dom: "packages/dom/index.ts",
     middleware: "packages/middleware/index.ts",
     react: "packages/react/index.ts",
-    "react-native": "packages/react-native/index.ts",
-    utils: "packages/utils/index.ts",
+    "react-native": "packages/react-native/index.ts"
   },
   format: ["cjs", "esm"],
   dts: true,
@@ -17,21 +16,13 @@ export const config = defineConfig({
   clean: true,
   treeshake: true,
   minify: true,
-  splitting: false,
-  external: [
-    "buffer",
-    "crypto",
-    "fs",
-    "path",
-    "react",
-    "react-dom"
-  ],
+  external: ["buffer", "crypto", "fs", "path", "react", "react-dom"],
   esbuildOptions(options) {
     options.platform = "neutral";
     options.alias = {
-      "~": "./packages",
+      "~": "./packages"
     };
-  },
+  }
 });
 
 export default config;
